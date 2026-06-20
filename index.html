@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Karayoluyla Umre Rehberi</title>
+    
+    <!-- PWA ve Meta Etiketleri -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#1e293b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    <!-- İkon head etiketinin içine taşındı ve yolu düzeltildi -->
+    <link rel="icon" type="image/png" href="./icons/icon-192.png">
+
+    <!-- Dış Kaynaklı Fontlar -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <!-- Kendi CSS dosyanız -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706', 700: '#b45309' },
+                        slate: { 850: '#151e2e', 900: '#0f172a' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'islamic-pattern': "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%239C92AC\\' fill-opacity=\\'0.05\\'%3E%3Cpath d=\\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- React ve Gerekli Kütüphaneler (CDN) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0JZ52BKPGN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0JZ52BKPGN');
+    </script>
+</head>
+    
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-500 bg-islamic-pattern">
+    
+    <!-- React Uygulaması Alanı -->
+    <div id="root"></div>
+
+    <!-- PWA Kurulum Bildirimi (Toast) -->
+    <div id="install-toast" class="opacity-0 pointer-events-none fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 border border-emerald-500 z-[9995]">
+        <i data-lucide="check-circle-2" class="w-6 h-6 text-white"></i>
+        <div>
+            <h4 class="font-bold text-sm">Kurulum Tamamlandı</h4>
+            <p class="text-xs text-emerald-100">Uygulama ana ekranınıza başarıyla eklendi.</p>
+        </div>
+    </div>
+
+    <!-- PWA Çıkış Uyarısı (Toast) -->
+    <div id="exit-toast" class="opacity-0 pointer-events-none fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-800 dark:bg-slate-700 text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-3 border border-slate-600 z-[9995]">
+        <i data-lucide="log-out" class="w-4 h-4 text-gray-300"></i>
+        <p class="text-xs font-medium text-gray-200">Çıkış yapmak için tekrar basın</p>
+    </div>
+
+    <script>
+        // Service Worker Kaydı (Yol sw.js ile senkronize edildi)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW Hazır ve Aktif:', reg.scope))
+                    .catch(err => console.error('SW Hatası:', err));
+            });
+        }
+
+        // --- PWA MANTIK KATMANI ---
+        window.addEventListener('appinstalled', () => {
+            if (typeof gtag === 'function') {
+                gtag('event', 'pwa_install', { 'event_category': 'Uygulama', 'event_label': 'Başarılı Kurulum' });
+            }
+            const toast = document.getElementById('install-toast');
+            if (toast) {
+                toast.classList.remove('opacity-0', 'pointer-events-none');
+                toast.classList.add('opacity-100');
+                if (window.lucide) window.lucide.createIcons();
+                setTimeout(() => {
+                    toast.classList.add('opacity-0', 'pointer-events-none');
+                    toast.classList.remove('opacity-100');
+                }, 5000);
+            }
+        });
+    </script>
+
+    <!-- React Uygulaması (Yol sw.js ile aynı olması için './app.js' yapıldı) -->
+    <script type="text/babel" src="./app.js"></script>
+</body>
+</html>
