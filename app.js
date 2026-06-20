@@ -5,7 +5,7 @@ const DEVELOPER_PHOTO_URL = "icons/icon-192.png";
 const AUDIO_TELBIYE = "audio/Telbiye.mp3";
 
 // SÜRÜM BİLGİSİ
-const APP_VERSION = "v2.9.4"; // Otel/Restoran şehir filtresi ve güvenlik önlemleri eklendi.
+const APP_VERSION = "v2.9.0"; // Türk oto tamircileri rehberi eklendi.
 
 // HEADER AYARLARI
 const SITE_TITLE = "UmreGO"; 
@@ -111,785 +111,29 @@ const HOTELS_RESTAURANTS_DATA = {
             image: "/images/rest_mekke_khalil_cheff.webp",
             rating: 4.0
         },
-                {
-            id: "r3",
-            name: "Turkish Almazaq",
-            country: "Mekke",
-            desc: "Cin mescidi yakınında bir Türk lokantası.",
-            phone: "+966556362671",
-            whatsapp: "https://wa.me/966556362671",
-            lat: 21.4319,
-            lng: 39.8291,
-            image: "/images/nophoto.webp",
-            rating: 3.5
-        },
-        {
-            id: "r4",
-            name: "Turkish Taste Almazaq Restaurant",
-            country: "Mekke",
-            desc: "Mekke'de bir Türk lokantası.",
-            phone: "+966556362671",
-            whatsapp: "https://wa.me/966556362671",
-            lat: 21.4281,
-            lng: 39.856,
-            image: "/images/nophoto.webp",
-            rating: 3.6
-        },
-        {
-            id: "r5",
-            name: "Kebapçım Mekke",
-            country: "Mekke",
-            desc: "King Faisal hastanesi civarında bir Türk lokantası.",
-            phone: "+966508812238",
-            whatsapp: "https://wa.me/966508812238",
-            lat: 21.4331,
-            lng: 39.8532,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
-        {
-            id: "r6",
-            name: "Kirli'nin Yeri",
-            country: "Mekke",
-            desc: "Mekke'de bir Türk lokantası.",
-            phone: "+966503611656",
-            whatsapp: "https://wa.me/966503611656",
-            lat: 21.4304,
-            lng: 39.8612,
-            image: "/images/nophoto.webp",
-            rating: 4.2
-        },
-        {
-            id: "r7",
-            name: "Simit Evi",
-            country: "Mekke",
-            desc: "Türk kahvaltısı da olan bir mekân.",
-            phone: "+966566907012",
-            whatsapp: "https://wa.me/966566907012",
-            lat: 21.3802,
-            lng: 39.7875,
-            image: "/images/nophoto.webp",
-            rating: 4.3
-        },
-        {
-            id: "r8",
-            name: "Gurkan Şef Steakhouse",
-            country: "Mekke",
-            desc: "Mekke'de lüks bir Türk restaurantı.",
-            phone: "+966559288684",
-            whatsapp: "https://wa.me/966559288684",
-            lat: 21.3528,
-            lng: 39.8952,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
-        {
-            id: "r9",
-            name: "Turkish Al Mazaq Restorant Al Awali",
-            country: "Mekke",
-            desc: "Mekke'de bir Türk lokantası.",
-            phone: "+966556362671",
-            whatsapp: "https://wa.me/966556362671",
-            lat: 21.3593,
-            lng: 39.8743,
-            image: "/images/nophoto.webp",
-            rating: 3.7
-        },
-        {
-            id: "r10",
-            name: "Tat Restorant",
-            country: "Mekke",
-            desc: "Mekke'de bir Türk lokantası.",
-            phone: "+966125747478",
-            whatsapp: "https://wa.me/966125747478",
-            lat: 21.4398,
-            lng: 39.8352,
-            image: "/images/nophoto.webp",
-            rating: 3.9
-        },
-        {
-            id: "r11",
-            name: "Hayal Al Divan İstanbul Restaurant",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966536001615",
-            whatsapp: "https://wa.me/966536001615",
-            lat: 24.4469,
-            lng: 39.6192,
-            image: "/images/nophoto.webp",
-            rating: 4.6
-        },
-        {
-            id: "r12",
-            name: "İskenderun Restaurant",
-            country: "Medine",
-            desc: "Medine'de bir Türk lokantası.",
-            phone: "+966544146243",
-            whatsapp: "https://wa.me/966544146243",
-            lat: 24.4855,
-            lng: 39.5999,
-            image: "/images/nophoto.webp",
-            rating: 3.9
-        },
-        {
-            id: "r13",
-            name: "İstanbul Köşk Restoran",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966536222566",
-            whatsapp: "https://wa.me/966536222566",
-            lat: 24.492,
-            lng: 39.592,
-            image: "/images/nophoto.webp",
-            rating: 3.8
-        },
-        {
-            id: "r14",
-            name: "Fairuz Turkish Restaurant - Yahya Usta",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966552924991",
-            whatsapp: "https://wa.me/966552924991",
-            lat: 24.494303791838213,
-            lng: 39.58558698220959,
-            image: "/images/rest_medine_yahyausta.webp",
-            rating: 4.2
-        },
-        {
-            id: "r15",
-            name: "Saray İskender",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966544212021",
-            whatsapp: "https://wa.me/966544212021",
-            lat: 24.4737,
-            lng: 39.5814,
-            image: "/images/nophoto.webp",
-            rating: 4.1
-        },
-        {
-            id: "r16",
-            name: "Turkish Grill Pies",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966547147523",
-            whatsapp: "https://wa.me/966547147523",
-            lat: 24.4343,
-            lng: 39.5922,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
-        {
-            id: "r17",
-            name: "Al Sharq Grills & Pastries",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966559838161",
-            whatsapp: "https://wa.me/966559838161",
-            lat: 24.4342,
-            lng: 39.5917,
-            image: "/images/nophoto.webp",
-            rating: 4.3
-        },
-        {
-            id: "r18",
-            name: "Chef Burak Gurme Restaurant",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966531515403",
-            whatsapp: "https://wa.me/966531515403",
-            lat: 24.4265,
-            lng: 39.5971,
-            image: "/images/nophoto.webp",
-            rating: 4.8
-        },
-        {
-            id: "r19",
-            name: "Kuzey Kebap Restoranı",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966537440083",
-            whatsapp: "https://wa.me/966537440083",
-            lat: 24.4922,
-            lng: 39.5923,
-            image: "/images/nophoto.webp",
-            rating: 4.5
-        },
-        {
-            id: "r20",
-            name: "Türkiye Pide Kebap",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "-",
-            whatsapp: "https://wa.me/-",
-            lat: 24.4861,
-            lng: 39.6045,
-            image: "/images/nophoto.webp",
-            rating: 0.0
-        },
-        {
-            id: "r21",
-            name: "Ordu Boztepe Türk Restorantı",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966552579131",
-            whatsapp: "https://wa.me/966552579131",
-            lat: 24.4833,
-            lng: 39.6829,
-            image: "/images/nophoto.webp",
-            rating: 4.9
-        },
-        {
-            id: "r22",
-            name: "Ulus Restaurant",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "+966506048710",
-            whatsapp: "https://wa.me/966506048710",
-            lat: 24.4851,
-            lng: 39.5776,
-            image: "/images/nophoto.webp",
-            rating: 4.7
-        },
-        {
-            id: "r23",
-            name: "Riman Restaurant",
-            country: "Medine",
-            desc: "Memnun kalınmış Hatay lezzetleri.",
-            phone: "+966564600801",
-            whatsapp: "https://wa.me/966564600801",
-            lat: 24.471727547529895,
-            lng: 39.55466207116365,
-            image: "/images/nophoto.webp",
-            rating: 4.3
-        },
-        {
-            id: "r24",
-            name: "Huda Türk Restaurant",
-            country: "Medine",
-            desc: "Sulu yemek, ızgara ve pide çeşitleri.",
-            phone: "+966554389143",
-            whatsapp: "https://wa.me/966554389143",
-            lat: 24.47047014767619,
-            lng: 39.602277071163655,
-            image: "/images/nophoto.webp",
-            rating: 4.0
-        },
-        {
-            id: "r25",
-            name: "Hotel Medina Milli Görüş",
-            country: "Medine",
-            desc: "Kahvaltı ve akşam yemeği ücret karşılığı alınabiliyor. Kantininde de Türk çayı ve tost bulunuyor.",
-            phone: "+966552214362",
-            whatsapp: "https://wa.me/966552214362",
-            lat: 24.465509348253303,
-            lng: 39.604123580945725,
-            image: "/images/nophoto.webp",
-            rating: 4.5
-        },
-        {
-            id: "r26",
-            name: "Albaik",
-            country: "Medine",
-            desc: "Arabistanın en meşhur fast food zinciri. Birçok şubesi var.",
-            phone: "+9668002442245",
-            whatsapp: "https://wa.me/9668002442245",
-            lat: 24.47140097936943,
-            lng: 39.61035710000001,
-            image: "/images/nophoto.webp",
-            rating: 4.1
-        },
-        {
-            id: "r27",
-            name: "Albaik (başka Şube)",
-            country: "Medine",
-            desc: "Arabistanın en meşhur fast food zinciri. Birçok şubesi var.",
-            phone: "+9668002442245",
-            whatsapp: "https://wa.me/9668002442245",
-            lat: 24.463901241395927,
-            lng: 39.61614500004014,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
-        {
-            id: "r28",
-            name: "Saraya Istanbul Turkish Food",
-            country: "Medine",
-            desc: "Medine'de bir Türk restaurantı.",
-            phone: "-",
-            whatsapp: "https://wa.me/-",
-            lat: 24.474342435183885,
-            lng: 39.610767735581824,
-            image: "/images/nophoto.webp",
-            rating: 3.2
-        },
-        {
-            id: "r29",
-            name: "Amarant Restaurant",
-            country: "Medine",
-            desc: "Özbek lezzetleri.",
-            phone: "+966571497777",
-            whatsapp: "https://wa.me/966571497777",
-            lat: 24.464417245146116,
-            lng: 39.60384738650904,
-            image: "/images/nophoto.webp",
-            rating: 4.1
-        },
-        {
-            id: "r30",
-            name: "Al Romansiah",
-            country: "Medine",
-            desc: "Arap lezzetleri. Birçok şubesi var.",
-            phone: "+966920000144",
-            whatsapp: "https://wa.me/966920000144",
-            lat: 24.470041412877716,
-            lng: 39.64163527116365,
-            image: "/images/nophoto.webp",
-            rating: 4.2
-        },
-        {
-            id: "r31",
-            name: "Maestro Pizza",
-            country: "Medine",
-            desc: "Beğeni almış bir pizzacı. Birçok şubesi var.",
-            phone: "+966920017777",
-            whatsapp: "https://wa.me/966920017777",
-            lat: 24.48891052710349,
-            lng: 39.57995794232732,
-            image: "/images/nophoto.webp",
-            rating: 4.0
-        },
-        {
-            id: "r32",
-            name: "Mahmood Kebap",
-            country: "Medine",
-            desc: "Özbek lezzetleri.",
-            phone: "+966531800707",
-            whatsapp: "https://wa.me/966531800707",
-            lat: 24.46375501718126,
-            lng: 39.61090941349095,
-            image: "/images/nophoto.webp",
-            rating: 4.8
-        },
-        {
-            id: "r33",
-            name: "Albaik",
-            country: "Mekke",
-            desc: "Arabistanın en meşhur fast food zinciri. Birçok yerde şubesi var.",
-            phone: "+9668002442245",
-            whatsapp: "https://wa.me/9668002442245",
-            lat: 21.42132337576958,
-            lng: 39.8219553,
-            image: "/images/nophoto.webp",
-            rating: 3.8
-        },
-        {
-            id: "r34",
-            name: "Albaik (şube)",
-            country: "Mekke",
-            desc: "Arabistanın en meşhur fast food zinciri. Birçok yerde şubesi var.",
-            phone: "+9668002442245",
-            whatsapp: "https://wa.me/9668002442245",
-            lat: 21.41952300000005,
-            lng: 39.82375418220911,
-            image: "/images/nophoto.webp",
-            rating: 4.1
-        },
-        {
-            id: "r35",
-            name: "Albaik Aziziye",
-            country: "Mekke",
-            desc: "Arabistanın en meşhur fast food zinciri. Birçok yerde şubesi var.",
-            phone: "+966122866777",
-            whatsapp: "https://wa.me/966122866777",
-            lat: 21.416929096997045,
-            lng: 39.861188582209074,
-            image: "/images/nophoto.webp",
-            rating: 4.3
-        },
-        {
-            id: "r36",
-            name: "Al Romansiah",
-            country: "Mekke",
-            desc: "Arabistan lezzetleri.",
-            phone: "+966920000144",
-            whatsapp: "https://wa.me/966920000144",
-            lat: 21.419404699999998,
-            lng: 39.822512900000014,
-            image: "/images/nophoto.webp",
-            rating: 4.3
-        },
-        {
-            id: "r37",
-            name: "Al Romansiah",
-            country: "Mekke",
-            desc: "Arabistan lezzetleri.",
-            phone: "+966920000144",
-            whatsapp: "https://wa.me/966920000144",
-            lat: 21.400909005458658,
-            lng: 39.880766635581836,
-            image: "/images/nophoto.webp",
-            rating: 4.2
-        },
-        {
-            id: "r38",
-            name: "Mutabbak Cafe",
-            country: "Mekke",
-            desc: "Çay, kahve içecek vb. var. Türkiye gözlemesine benzer yiyecekleri var.",
-            phone: "-",
-            whatsapp: "https://wa.me/-",
-            lat: 21.419988927291538,
-            lng: 39.82378044110453,
-            image: "/images/nophoto.webp",
-            rating: 4.5
-        },
-        {
-            id: "r39",
-            name: "Kabsa Hashi Restaurant",
-            country: "Mekke",
-            desc: "Deve eti, sembuse, kebze gibi Arap lezzetleri.",
-            phone: "+966536582511",
-            whatsapp: "https://wa.me/966536582511",
-            lat: 21.415649470190647,
-            lng: 39.86231637116366,
-            image: "/images/nophoto.webp",
-            rating: 4.0
-        },
-        {
-            id: "r40",
-            name: "Maestro Pizza",
-            country: "Mekke",
-            desc: "Birçok şubesi olan meşhur pizzacı.",
-            phone: "+966920017777",
-            whatsapp: "https://wa.me/966920017777",
-            lat: 21.41526449405094,
-            lng: 39.862883471163656,
-            image: "/images/nophoto.webp",
-            rating: 3.9
-        },
-        {
-            id: "r41",
-            name: "Ankara Barbekü Restoran",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "+966500801171",
-            whatsapp: "https://wa.me/966500801171",
-            lat: 28.392854042638696,
-            lng: 36.595927242327306,
-            image: "/images/nophoto.webp",
-            rating: 4.7
-        },
-        {
-            id: "r42",
-            name: "Saray İskender",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "+966542716040",
-            whatsapp: "https://wa.me/966542716040",
-            lat: 28.43427628637946,
-            lng: 36.520839699999996,
-            image: "/images/nophoto.webp",
-            rating: 3.7
-        },
-        {
-            id: "r43",
-            name: "Turkish Restaurant",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "+966559387184",
-            whatsapp: "https://wa.me/966559387184",
-            lat: 28.507382157963633,
-            lng: 36.4667417846546,
-            image: "/images/nophoto.webp",
-            rating: 3.5
-        },
-        {
-            id: "r44",
-            name: "Turkish Legends Restaurant",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "+966508704327",
-            whatsapp: "https://wa.me/966508704327",
-            lat: 28.397123270384537,
-            lng: 36.589935215345385,
-            image: "/images/nophoto.webp",
-            rating: 4.0
-        },
-        {
-            id: "r45",
-            name: "Seç Turkish Restaurant",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "+966144210595",
-            whatsapp: "https://wa.me/966144210595",
-            lat: 28.393189295531776,
-            lng: 36.57353380185443,
-            image: "/images/nophoto.webp",
-            rating: 4.1
-        },
-        {
-            id: "r46",
-            name: "Alkhaleej Restaurant",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "+966535237300",
-            whatsapp: "https://wa.me/966535237300",
-            lat: 28.402218443166895,
-            lng: 36.5522149269819,
-            image: "/images/nophoto.webp",
-            rating: 4.1
-        },
-        {
-            id: "r47",
-            name: "Time Out Restaurant",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "+966531448777",
-            whatsapp: "https://wa.me/966531448777",
-            lat: 28.410052612062753,
-            lng: 36.55892851349096,
-            image: "/images/nophoto.webp",
-            rating: 5.0
-        },
-        {
-            id: "r48",
-            name: "Al Madain Zincir Restoranı",
-            country: "Tebük",
-            desc: "Tebük'te bir Türk restoranı.",
-            phone: "-",
-            whatsapp: "https://wa.me/-",
-            lat: 28.433053233312943,
-            lng: 36.514003673018095,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
-        {
-            id: "r49",
-            name: "Top Grill Restaurant & Lounge",
-            country: "Tebük",
-            desc: "Tebük'te mangal ağırlıklı bir restoran.",
-            phone: "+966533227383",
-            whatsapp: "https://wa.me/966533227383",
-            lat: 28.425588935627307,
-            lng: 36.57222711534539,
-            image: "/images/nophoto.webp",
-            rating: 4.5
-        },
-        {
-            id: "r50",
-            name: "Türk Paşa Restoranları",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962775249025",
-            whatsapp: "https://wa.me/962775249025",
-            lat: 31.714056763414845,
-            lng: 35.78810506441818,
-            image: "/images/nophoto.webp",
-            rating: 3.8
-        },
-        {
-            id: "r51",
-            name: "Maxim Turkish Restaurant",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+96264460023",
-            whatsapp: "https://wa.me/96264460023",
-            lat: 31.7074557187004,
-            lng: 35.9513467846546,
-            image: "/images/nophoto.webp",
-            rating: 4.2
-        },
-        {
-            id: "r52",
-            name: "Antakya Türk Restoranı",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962791009286",
-            whatsapp: "https://wa.me/962791009286",
-            lat: 31.699274192427243,
-            lng: 35.95368805581826,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
-        {
-            id: "r53",
-            name: "Türk Restoranı",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+96264460105",
-            whatsapp: "https://wa.me/96264460105",
-            lat: 31.71172594471114,
-            lng: 35.949945871163656,
-            image: "/images/nophoto.webp",
-            rating: 4.2
-        },
-        {
-            id: "r54",
-            name: "Türk Restoranı Ve Izgara",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962775635031",
-            whatsapp: "https://wa.me/962775635031",
-            lat: 31.714577224076585,
-            lng: 35.797656828836345,
-            image: "/images/nophoto.webp",
-            rating: 4.6
-        },
-        {
-            id: "r55",
-            name: "Al-usul Türk Izgara Restoranı",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962775518102",
-            whatsapp: "https://wa.me/962775518102",
-            lat: 31.72469094024385,
-            lng: 35.803126544181744,
-            image: "/images/nophoto.webp",
-            rating: 4.5
-        },
-        {
-            id: "r56",
-            name: "Zambak Turkish Cuisine",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962798989661",
-            whatsapp: "https://wa.me/962798989661",
-            lat: 31.87693075225963,
-            lng: 35.88364012698192,
-            image: "/images/nophoto.webp",
-            rating: 4.3
-        },
-        {
-            id: "r57",
-            name: "Tavada Tavuk",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962797771373",
-            whatsapp: "https://wa.me/962797771373",
-            lat: 31.916184574071597,
-            lng: 35.9100718153454,
-            image: "/images/nophoto.webp",
-            rating: 4.5
-        },
-        {
-            id: "r58",
-            name: "Usta Ünsal",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962789595670",
-            whatsapp: "https://wa.me/962789595670",
-            lat: 31.95737456539158,
-            lng: 35.86585201534536,
-            image: "/images/nophoto.webp",
-            rating: 4.7
-        },
-        {
-            id: "r59",
-            name: "Turkish Restaurant",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962795886989",
-            whatsapp: "https://wa.me/962795886989",
-            lat: 31.969107058995043,
-            lng: 35.91927007116365,
-            image: "/images/nophoto.webp",
-            rating: 4.0
-        },
-        {
-            id: "r60",
-            name: "Sofia Turkish Restaurant",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+96265511000",
-            whatsapp: "https://wa.me/96265511000",
-            lat: 31.973897554058514,
-            lng: 35.86765934418174,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
-        {
-            id: "r61",
-            name: "Kofteon.jo",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962777003435",
-            whatsapp: "https://wa.me/962777003435",
-            lat: 31.983822850790787,
-            lng: 35.88100304232729,
-            image: "/images/nophoto.webp",
-            rating: 5.0
-        },
-        {
-            id: "r62",
-            name: "Tavada Tavuk Mecca Mall",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962799269538",
-            whatsapp: "https://wa.me/962799269538",
-            lat: 31.9777398558528,
-            lng: 35.84163924232731,
-            image: "/images/nophoto.webp",
-            rating: 4.8
-        },
-        {
-            id: "r63",
-            name: "Lezzet İstanbul",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962796516633",
-            whatsapp: "https://wa.me/962796516633",
-            lat: 32.02331124064008,
-            lng: 35.874819115345396,
-            image: "/images/nophoto.webp",
-            rating: 4.3
-        },
-        {
-            id: "r64",
-            name: "Restaurant Turkish Grill House",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+96264895256",
-            whatsapp: "https://wa.me/96264895256",
-            lat: 31.97815915479922,
-            lng: 35.98105102698191,
-            image: "/images/nophoto.webp",
-            rating: 4.2
-        },
-        {
-            id: "r65",
-            name: "Barbecue Turkish Shawrma",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962796013480",
-            whatsapp: "https://wa.me/962796013480",
-            lat: 32.028378218163546,
-            lng: 36.03948652883635,
-            image: "/images/nophoto.webp",
-            rating: 4.2
-        },
-        {
-            id: "r66",
-            name: "Turkish Restaurant",
-            country: "Ürdün",
-            desc: "Ürdün'de bir Türk restoranı.",
-            phone: "+962797095094",
-            whatsapp: "https://wa.me/962797095094",
-            lat: 32.34256472545441,
-            lng: 36.188180986509046,
-            image: "/images/nophoto.webp",
-            rating: 4.4
-        },
         {
-            id: "r67",
-            name: "İskander House",
-            country: "Medine",
-            desc: "Medine'de bir Türk restoranı.",
-            phone: "+966538044074",
-            whatsapp: "https://wa.me/966538044074",
-            lat: 24.473350844318514,
-            lng: 39.5813648919744,
-            image: "/images/nophoto.webp",
-            rating: 5.0
+            "text-blue-300">id: "r3",
+            "text-blue-300">name: "Turkish Almazaq",
+            "text-blue-300">country: "Mekke",
+            "text-blue-300">desc: "Cin mescidi yakınında bir Türk lokantası. Yorumlarda fiyatların biraz pahalı olduğu belirtilmiş.",
+            "text-blue-300">phone: "+966556362671",
+            "text-blue-300">whatsapp: "">https://wa.me/966556362671",
+            "text-blue-300">lat: 21.4319,
+            "text-blue-300">lng: 39.8291,
+            "text-blue-300">image: "/images/rest_mekke_turkish_almazaq.webp",
+            "text-blue-300">rating: 3.5
+        },
+        {
+            "text-blue-300">id: "r4",
+            "text-blue-300">name: "Turkish Taste Almazaq Restaurant",
+            "text-blue-300">country: "Mekke",
+            "text-blue-300">desc: "Mekke'de bir Türk lokantası. Google yorum sayısı fazla, yorum puanı 3,6",
+            "text-blue-300">phone: "+966556362671",
+            "text-blue-300">whatsapp: "">https://wa.me/966556362671",
+            "text-blue-300">lat: 21.4281,
+            "text-blue-300">lng: 39.856,
+            "text-blue-300">image: "/images/rest_mekke_turkish_taste_almazaq_restaurant.webp",
+            "text-blue-300">rating: 3.6
         }
     ]
 };
@@ -1966,11 +1210,10 @@ const HotelsRestaurantsMap = ({ userLoc }) => {
     );
 };
 
-// --- GÜNCELLENMİŞ OTEL & RESTORAN BİLEŞENİ (ŞEHİR FİLTRESİ EKLENDİ) ---
+// --- GÜNCELLENMİŞ OTEL & RESTORAN BİLEŞENİ ---
 const HotelsRestaurantsModule = () => {
     const [viewMode, setViewMode] = useState('list');
     const [activeTab, setActiveTab] = useState('hotels');
-    const [activeCity, setActiveCity] = useState('Hepsi'); // YENİ EKLENEN FİLTRE
     const [userLoc, setUserLoc] = useState(null);
 
     useEffect(() => { 
@@ -1981,23 +1224,6 @@ const HotelsRestaurantsModule = () => {
             );
         }
     }, []);
-
-    // Sekme değiştiğinde şehri "Hepsi"ne sıfırla
-    const handleTabChange = (tab) => {
-        setActiveTab(tab);
-        setActiveCity('Hepsi');
-    };
-
-    // Mevcut veri listesi
-    const currentData = HOTELS_RESTAURANTS_DATA[activeTab];
-
-    // Bu listedeki benzersiz şehirleri (country alanını) bul
-    const uniqueCities = ['Hepsi', ...new Set(currentData.map(item => item.country))];
-
-    // Aktif şehre göre filtrelenmiş veriler
-    const filteredData = activeCity === 'Hepsi' 
-        ? currentData 
-        : currentData.filter(item => item.country === activeCity);
 
     return (
         <div className="p-4 pb-24 animate-fade-in space-y-4">
@@ -2028,88 +1254,69 @@ const HotelsRestaurantsModule = () => {
 
             {viewMode === 'list' ? (
                 <div className="space-y-4 animate-fade-in-up">
-                    {/* Üst Kategori Sekmeleri (Oteller / Restoranlar) */}
+                    {/* Kategorize Edilmiş Premium Listeler (Oteller / Restoranlar) */}
                     <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide -mx-1 px-1 mt-2">
-                        <button onClick={() => handleTabChange('hotels')} className={`whitespace-nowrap px-4 py-2.5 rounded-full text-sm font-bold border transition-colors ${activeTab === 'hotels' ? 'bg-gold-500 border-gold-500 text-slate-900 shadow-md' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700'}`}>
+                        <button onClick={() => setActiveTab('hotels')} className={`whitespace-nowrap px-4 py-2.5 rounded-full text-sm font-bold border transition-colors ${activeTab === 'hotels' ? 'bg-gold-500 border-gold-500 text-slate-900 shadow-md' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700'}`}>
                             Oteller
                         </button>
-                        <button onClick={() => handleTabChange('restaurants')} className={`whitespace-nowrap px-4 py-2.5 rounded-full text-sm font-bold border transition-colors ${activeTab === 'restaurants' ? 'bg-gold-500 border-gold-500 text-slate-900 shadow-md' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700'}`}>
+                        <button onClick={() => setActiveTab('restaurants')} className={`whitespace-nowrap px-4 py-2.5 rounded-full text-sm font-bold border transition-colors ${activeTab === 'restaurants' ? 'bg-gold-500 border-gold-500 text-slate-900 shadow-md' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700'}`}>
                             Restoranlar
                         </button>
                     </div>
 
-                    {/* YENİ: Alt Şehir Filtreleri */}
-                    <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide -mx-1 px-1">
-                        {uniqueCities.map((city, idx) => (
-                            <button 
-                                key={idx} 
-                                onClick={() => setActiveCity(city)} 
-                                className={`whitespace-nowrap px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${activeCity === city ? 'bg-slate-800 text-white dark:bg-slate-200 dark:text-slate-800 shadow-sm' : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'}`}
-                            >
-                                {city}
-                            </button>
-                        ))}
-                    </div>
-
                     <div className="space-y-4">
-                        {filteredData.length === 0 ? (
-                            <div className="text-center p-8 text-slate-500 dark:text-slate-400">
-                                Bu şehirde kayıtlı mekan bulunmamaktadır.
-                            </div>
-                        ) : (
-                            filteredData.map(item => (
-                                <div key={item.id} className="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 group hover:shadow-md transition-all duration-300">
-                                    <div className="p-4 flex flex-col gap-4">
-                                        <div className="flex gap-4">
-                                            {/* Image */}
-                                            <div className="w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-700 relative shadow-inner">
-                                                {item.image && item.image.startsWith('[') ? (
-                                                    <div className="w-full h-full flex items-center justify-center text-slate-400">
-                                                        <LucideIcon name="image" className="w-8 h-8 opacity-50" />
-                                                    </div>
-                                                ) : (
-                                                    <img src={item.image || '/images/default.jpg'} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                                )}
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                            </div>
-
-                                            {/* Content */}
-                                            <div className="flex-1 flex flex-col py-1">
-                                                <h4 className="font-bold text-base sm:text-lg text-slate-800 dark:text-slate-100 leading-tight mb-1">{item.name}</h4>
-
-                                                <div className="flex flex-wrap items-center gap-2 mb-2">
-                                                    <span className="flex items-center gap-1 text-[10px] bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-md font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                                                        <LucideIcon name="map-pin" className="w-3 h-3" /> {item.country}
-                                                    </span>
-                                                    {(item.stars || item.rating) && (
-                                                        <div className="flex items-center gap-1 bg-amber-50 dark:bg-amber-900/30 px-2 py-1 rounded-md text-amber-600 dark:text-amber-400 border border-amber-100 dark:border-amber-800/50">
-                                                            <LucideIcon name="star" className="w-3 h-3 fill-current" />
-                                                            <span className="text-[10px] font-bold">{item.stars || item.rating}/5</span>
-                                                        </div>
-                                                    )}
+                        {HOTELS_RESTAURANTS_DATA[activeTab].map(item => (
+                            <div key={item.id} className="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 group hover:shadow-md transition-all duration-300">
+                                <div className="p-4 flex flex-col gap-4">
+                                    <div className="flex gap-4">
+                                        {/* Image */}
+                                        <div className="w-28 h-28 shrink-0 rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-700 relative shadow-inner">
+                                            {item.image && item.image.startsWith('[') ? (
+                                                <div className="w-full h-full flex items-center justify-center text-slate-400">
+                                                    <LucideIcon name="image" className="w-8 h-8 opacity-50" />
                                                 </div>
-
-                                                <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-3 leading-relaxed flex-1">
-                                                    {item.desc}
-                                                </p>
-                                            </div>
+                                            ) : (
+                                                <img src={item.image || '/images/default.jpg'} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                            )}
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </div>
 
-                                        {/* Actions */}
-                                        <div className="flex gap-2 pt-3 border-t border-slate-50 dark:border-slate-700/50">
-                                            <button onClick={() => window.open(`https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}`)} className="flex-1 py-2.5 bg-blue-50 hover:bg-blue-500 hover:text-white text-blue-600 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all duration-300 dark:bg-blue-900/20 dark:text-blue-400 dark:hover:bg-blue-600 dark:hover:text-white group/btn">
-                                                <LucideIcon name="map" className="w-4 h-4 group-hover/btn:scale-110 transition-transform" /> Yol Tarifi
-                                            </button>
-                                            {item.whatsapp && (
-                                                <button onClick={() => window.open(item.whatsapp)} className="flex-1 py-2.5 bg-green-50 hover:bg-green-500 hover:text-white text-green-600 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all duration-300 dark:bg-green-900/20 dark:text-green-400 dark:hover:bg-green-600 dark:hover:text-white group/btn">
-                                                    <LucideIcon name="message-circle" className="w-4 h-4 group-hover/btn:scale-110 transition-transform" /> İletişim
-                                                </button>
-                                            )}
+                                        {/* Content */}
+                                        <div className="flex-1 flex flex-col py-1">
+                                            <h4 className="font-bold text-base sm:text-lg text-slate-800 dark:text-slate-100 leading-tight mb-1">{item.name}</h4>
+
+                                            <div className="flex flex-wrap items-center gap-2 mb-2">
+                                                <span className="flex items-center gap-1 text-[10px] bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-md font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                                                    <LucideIcon name="map-pin" className="w-3 h-3" /> {item.country}
+                                                </span>
+                                                {(item.stars || item.rating) && (
+                                                    <div className="flex items-center gap-1 bg-amber-50 dark:bg-amber-900/30 px-2 py-1 rounded-md text-amber-600 dark:text-amber-400 border border-amber-100 dark:border-amber-800/50">
+                                                        <LucideIcon name="star" className="w-3 h-3 fill-current" />
+                                                        <span className="text-[10px] font-bold">{item.stars || item.rating}/5</span>
+                                                    </div>
+                                                )}
+                                            </div>
+
+                                            <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-3 leading-relaxed flex-1">
+                                                {item.desc}
+                                            </p>
                                         </div>
                                     </div>
+
+                                    {/* Actions */}
+                                    <div className="flex gap-2 pt-3 border-t border-slate-50 dark:border-slate-700/50">
+                                        <button onClick={() => window.open(`https://www.google.com/maps/dir/?api=1&destination=${item.lat},${item.lng}`)} className="flex-1 py-2.5 bg-blue-50 hover:bg-blue-500 hover:text-white text-blue-600 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all duration-300 dark:bg-blue-900/20 dark:text-blue-400 dark:hover:bg-blue-600 dark:hover:text-white group/btn">
+                                            <LucideIcon name="map" className="w-4 h-4 group-hover/btn:scale-110 transition-transform" /> Yol Tarifi
+                                        </button>
+                                        {item.whatsapp && (
+                                            <button onClick={() => window.open(item.whatsapp)} className="flex-1 py-2.5 bg-green-50 hover:bg-green-500 hover:text-white text-green-600 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-all duration-300 dark:bg-green-900/20 dark:text-green-400 dark:hover:bg-green-600 dark:hover:text-white group/btn">
+                                                <LucideIcon name="message-circle" className="w-4 h-4 group-hover/btn:scale-110 transition-transform" /> İletişim
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
-                            ))
-                        )}
+                            </div>
+                        ))}
                     </div>
                 </div>
             ) : (
@@ -2563,7 +1770,7 @@ const UpdateModal = ({ show, onClose, version }) => {
                     </div>
                     <h3 className="text-xl font-serif font-bold text-slate-800 dark:text-white mb-2">Yenilikler Var!</h3>
                     <p className="text-sm text-slate-600 dark:text-slate-300 mb-4">
-                        <b>Otel & Restoran:</b> Artık mekanları şehirlere göre filtreleyebilir ve çok daha kolay bulabilirsiniz.
+                        <b>Acil Numaralar:</b> Suudi Arabistan'daki Türk oto tamircilerin iletişim bilgileri eklendi!
                     </p>
                     <div className="bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg mb-6">
                         <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Yeni Sürüm</span>
@@ -4069,7 +3276,7 @@ const ComprehensiveGuide = () => {
     );
 };
 
-// --- ANA UYGULAMA (GÜVENLİK KORUMALARI EKLENDİ) ---
+// --- ANA UYGULAMA ---
 const App = () => {
     const [view, setView] = useState('dashboard');
     const [installPrompt, setInstallPrompt] = useState(null);
@@ -4086,56 +3293,7 @@ const App = () => {
     });
 
     useEffect(() => { if(window.lucide) window.lucide.createIcons(); });
-
-    // --- YENİ EKLENEN GÜVENLİK / KOPYALAMA KORUMASI ---
-    useEffect(() => {
-        // 1. Sağ tık engelleme
-        const handleContextMenu = (e) => e.preventDefault();
-        document.addEventListener('contextmenu', handleContextMenu);
-
-        // 2. Klavye kısayolları engelleme (F12, Ctrl+U, Ctrl+Shift+I, Ctrl+C, Ctrl+A)
-        const handleKeyDown = (e) => {
-            if (
-                e.key === 'F12' || 
-                (e.ctrlKey && e.shiftKey && e.key === 'I') || 
-                (e.ctrlKey && e.key === 'U') || 
-                (e.ctrlKey && e.key === 'C') || 
-                (e.ctrlKey && e.key === 'A')
-            ) {
-                e.preventDefault();
-            }
-        };
-        document.addEventListener('keydown', handleKeyDown);
-
-        // 3. Metin seçimi engelleme CSS'i
-        const noSelectStyle = document.createElement('style');
-        noSelectStyle.innerHTML = `
-            body {
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-            /* Sadece input alanlarında (örneğin döviz ve maliyet hesaplayıcı) seçime ve yazmaya izin ver */
-            input, textarea {
-                -webkit-user-select: text;
-                -moz-user-select: text;
-                -ms-user-select: text;
-                user-select: text;
-            }
-        `;
-        document.head.appendChild(noSelectStyle);
-
-        // Cleanup
-        return () => {
-            document.removeEventListener('contextmenu', handleContextMenu);
-            document.removeEventListener('keydown', handleKeyDown);
-            if (document.head.contains(noSelectStyle)) {
-                document.head.removeChild(noSelectStyle);
-            }
-        };
-    }, []);
-
+    
     // --- NAVİGASYON VE GERİ TUŞU YÖNETİMİ ---
     const handleNavigation = (newView) => {
         if (newView === view) return;
