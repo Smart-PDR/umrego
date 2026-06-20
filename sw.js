@@ -1,4 +1,4 @@
-const CACHE_NAME = 'umrego-cache-v2.9.4'; // Sürüm güncellendi ve eksik olan tüm resim dosyaları önbellek listesine eklendi
+const CACHE_NAME = 'umrego-cache-v2.9.0'; // Sürüm güncellendi ve eksik olan tüm resim dosyaları önbellek listesine eklendi
 
 // Çevrimdışı çalışmak için gerekli TÜM kritik dosyalar
 const ASSETS_TO_CACHE = [
